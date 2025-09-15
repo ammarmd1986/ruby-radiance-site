@@ -1,14 +1,57 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, Star } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Quote } from "lucide-react";
+import ikramulImg from "@/assets/student-ikramul.jpg";
+import ahmedImg from "@/assets/student-ahmed.jpg";
+import tasninImg from "@/assets/student-tasnin.jpg";
+import jahidImg from "@/assets/student-jahid.jpg";
+import saifuddinImg from "@/assets/student-saifuddin.jpg";
+import alamgirImg from "@/assets/student-alamgir.jpg";
+import raniImg from "@/assets/student-rani.jpg";
 
 const achievers = [
-  { name: "Ikramul Hoque", band: "6.0", color: "bg-green-100 text-green-800" },
-  { name: "Ahmed Barkatullah", band: "7.5", color: "bg-blue-100 text-blue-800" },
-  { name: "Tasnin Ira Sarna", band: "8.5", color: "bg-purple-100 text-purple-800" },
-  { name: "Jahid M. Islam", band: "8.5", color: "bg-purple-100 text-purple-800" },
-  { name: "Saifuddin Majumder", band: "6.5", color: "bg-green-100 text-green-800" },
-  { name: "Alamgir Shaikh", band: "7.0", color: "bg-blue-100 text-blue-800" },
-  { name: "Rani S. Sarker", band: "7.5", color: "bg-blue-100 text-blue-800" },
+  { 
+    name: "Ikramul Hoque", 
+    band: "6.0", 
+    image: ikramulImg,
+    testimonial: "Ammar sir's teaching methods are exceptional! His expert guidance and cooperative nature helped me achieve my target band score. He made complex grammar concepts so easy to understand."
+  },
+  { 
+    name: "Ahmed Barkatullah", 
+    band: "7.5", 
+    image: ahmedImg,
+    testimonial: "I'm so grateful to Ammar sir for his talented teaching approach. He was incredibly helpful throughout my IELTS preparation and always encouraged me to push my limits."
+  },
+  { 
+    name: "Tasnin Ira Sarna", 
+    band: "8.5", 
+    image: tasninImg,
+    testimonial: "Ammar sir is truly an expert in English language teaching. His cooperative attitude and helpful nature made my learning journey smooth and successful!"
+  },
+  { 
+    name: "Jahid M. Islam", 
+    band: "8.5", 
+    image: jahidImg,
+    testimonial: "The way Ammar sir teaches is amazing! He's so talented and helpful. His expert knowledge and cooperative teaching style helped me excel in my IELTS exam."
+  },
+  { 
+    name: "Saifuddin Majumder", 
+    band: "6.5", 
+    image: saifuddinImg,
+    testimonial: "Ammar sir's expertise in English is remarkable. He was always cooperative and helpful, making sure I understood every concept thoroughly. Highly recommended!"
+  },
+  { 
+    name: "Alamgir Shaikh", 
+    band: "7.0", 
+    image: alamgirImg,
+    testimonial: "What makes Ammar sir special is his cooperative and helpful nature. His talented teaching methods and expert guidance transformed my English skills completely."
+  },
+  { 
+    name: "Rani S. Sarker", 
+    band: "7.5", 
+    image: raniImg,
+    testimonial: "Ammar sir is an incredibly talented teacher! His expert knowledge and helpful approach made my IELTS preparation enjoyable and effective. Thank you for being so cooperative!"
+  },
 ];
 
 const getBandColor = (band: string): string => {
@@ -36,34 +79,50 @@ const Achievers = () => {
           Celebrating the success stories of our dedicated students
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {achievers.map((achiever, index) => (
-            <Card key={index} className="card-hover border-0 shadow-md">
-              <CardContent className="p-6 text-center">
-                <div className="flex justify-center mb-4">
-                  <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center">
-                    <Award className="w-8 h-8 text-primary" />
-                  </div>
-                </div>
-                
-                <h3 className="text-lg font-bold mb-2 text-foreground">{achiever.name}</h3>
-                
-                <div className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-bold mb-3 ${getBandColor(achiever.band)}`}>
-                  Band Score: {achiever.band}
-                </div>
-                
-                <div className="flex justify-center gap-1">
-                  {[...Array(getStarCount(achiever.band))].map((_, starIndex) => (
-                    <Star key={starIndex} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  ))}
-                  {[...Array(5 - getStarCount(achiever.band))].map((_, starIndex) => (
-                    <Star key={starIndex} className="w-4 h-4 text-gray-300" />
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+        <Carousel className="max-w-5xl mx-auto">
+          <CarouselContent>
+            {achievers.map((achiever, index) => (
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <Card className="card-hover border-2 border-primary/20 shadow-lg bg-gradient-to-br from-white to-accent/5">
+                  <CardContent className="p-6 text-center relative">
+                    {/* Decorative frame corners */}
+                    <div className="absolute top-2 left-2 w-4 h-4 border-l-2 border-t-2 border-primary/30"></div>
+                    <div className="absolute top-2 right-2 w-4 h-4 border-r-2 border-t-2 border-primary/30"></div>
+                    <div className="absolute bottom-2 left-2 w-4 h-4 border-l-2 border-b-2 border-primary/30"></div>
+                    <div className="absolute bottom-2 right-2 w-4 h-4 border-r-2 border-b-2 border-primary/30"></div>
+                    
+                    {/* Student photo */}
+                    <div className="flex justify-center mb-4">
+                      <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-primary/20 shadow-md">
+                        <img 
+                          src={achiever.image} 
+                          alt={`${achiever.name} - EnglishXpress student`}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
+                    
+                    <h3 className="text-lg font-bold mb-2 text-foreground">{achiever.name}</h3>
+                    
+                    <div className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-bold mb-4 ${getBandColor(achiever.band)}`}>
+                      IELTS Band: {achiever.band}
+                    </div>
+                    
+                    {/* Testimonial */}
+                    <div className="relative">
+                      <Quote className="w-6 h-6 text-primary/30 absolute -top-2 -left-1" />
+                      <p className="text-sm text-muted-foreground italic leading-relaxed pl-4">
+                        "{achiever.testimonial}"
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex" />
+          <CarouselNext className="hidden md:flex" />
+        </Carousel>
 
         {/* Success Stats */}
         <div className="mt-16 bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
