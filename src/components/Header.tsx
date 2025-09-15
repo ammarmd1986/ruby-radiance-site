@@ -30,9 +30,6 @@ const Header = () => {
             <Button variant="whiteOutline" size="sm" className="hidden md:flex">
               Contact Us
             </Button>
-            <Button variant="redSolid" size="sm">
-              Join Now
-            </Button>
           </div>
         </div>
       </div>
