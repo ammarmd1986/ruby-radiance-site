@@ -28,16 +28,6 @@ const Hero = () => {
             <span className="block mt-2 font-semibold">Anytime, anywhere.</span>
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-              Start Your Journey
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button variant="heroOutline" size="lg" className="text-lg px-8 py-6">
-              <Play className="w-5 h-5" />
-              Watch Demo
-            </Button>
-          </div>
 
           {/* Trust Indicators */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
@@ -46,8 +36,8 @@ const Hero = () => {
               <div className="text-sm text-gray-300">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-white">500+</div>
-              <div className="text-sm text-gray-300">Students Trained</div>
+              <div className="text-3xl font-bold text-white">3750+</div>
+              <div className="text-sm text-gray-300">Student Mentored</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-white">8.5</div>
