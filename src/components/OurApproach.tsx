@@ -1,42 +1,29 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, Users, Calendar, BookOpen, Target, Award } from "lucide-react";
+import classroomStudents from "@/assets/classroom-students.jpg";
 
 const steps = [
   {
-    icon: CheckCircle,
-    title: "Free Language Skills Assessment",
-    description: "Comprehensive evaluation of your current English proficiency level",
-    color: "text-primary"
+    step: "1",
+    title: "Assessment & Goal Setting",
+    description: "We start with a comprehensive assessment to understand your current level and set realistic, achievable goals for your IELTS journey.",
+    color: "bg-blue-50 text-blue-600 border-blue-200"
   },
   {
-    icon: Users,
-    title: "Admission Confirmation",
-    description: "Personalized consultation and enrollment process",
-    color: "text-primary"
+    step: "2", 
+    title: "Personalized Learning Path",
+    description: "Based on your assessment, we create a customized learning path that focuses on your specific needs and target band score.",
+    color: "bg-purple-50 text-purple-600 border-purple-200"
   },
   {
-    icon: Calendar,
-    title: "Orientation",
-    description: "Introduction to our learning methodology and platform",
-    color: "text-primary"
+    step: "3",
+    title: "Intensive Practice",
+    description: "Regular practice sessions with immediate feedback help you master each section of the IELTS test systematically.",
+    color: "bg-green-50 text-green-600 border-green-200"
   },
   {
-    icon: BookOpen,
-    title: "Class Schedule Confirmation",
-    description: "Flexible scheduling that fits your lifestyle",
-    color: "text-primary"
-  },
-  {
-    icon: Target,
-    title: "Classes Begin",
-    description: "Interactive learning with expert mentors and small batch sizes",
-    color: "text-primary"
-  },
-  {
-    icon: Award,
-    title: "Mock Tests",
-    description: "Regular practice tests with detailed feedback and improvement strategies",
-    color: "text-primary"
+    step: "4",
+    title: "Test Readiness",
+    description: "Final preparation with full-length mock tests and last-minute tips to ensure you're confident and ready for test day.",
+    color: "bg-yellow-50 text-yellow-600 border-yellow-200"
   }
 ];
 
@@ -44,48 +31,38 @@ const OurApproach = () => {
   return (
     <section id="approach" className="py-20 bg-gradient-to-b from-background to-accent">
       <div className="container mx-auto px-4">
-        <h2 className="section-heading text-gradient">Our Approach</h2>
+        <h2 className="section-heading text-gradient text-center mb-4">Our Approach</h2>
         <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto text-lg">
-          A systematic journey designed to ensure your success in IELTS and beyond
+          A systematic, step-by-step methodology that has helped thousands of students achieve their IELTS goals efficiently and effectively.
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {steps.map((step, index) => {
-            const IconComponent = step.icon;
-            return (
-              <Card key={index} className="card-hover border-0 shadow-md">
-                <CardContent className="p-6 text-center">
-                  <div className="flex justify-center mb-4">
-                    <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center">
-                      <IconComponent className={`w-8 h-8 ${step.color}`} />
-                    </div>
-                  </div>
-                  <div className="mb-2 text-sm font-bold text-primary bg-accent px-3 py-1 rounded-full inline-block">
-                    Step {index + 1}
-                  </div>
-                  <h3 className="text-xl font-bold mb-3 text-foreground">{step.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{step.description}</p>
-                </CardContent>
-              </Card>
-            );
-          })}
-        </div>
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Image Section */}
+            <div className="order-2 lg:order-1">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src={classroomStudents} 
+                  alt="Bengali students in modern classroom setting" 
+                  className="w-full h-[500px] object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              </div>
+            </div>
 
-        {/* Flow Arrow for larger screens */}
-        <div className="hidden lg:block mt-12">
-          <div className="flex justify-center">
-            <div className="flex items-center space-x-4 text-primary">
-              <div className="w-3 h-3 rounded-full bg-primary"></div>
-              <div className="w-20 h-0.5 bg-primary"></div>
-              <div className="w-3 h-3 rounded-full bg-primary"></div>
-              <div className="w-20 h-0.5 bg-primary"></div>
-              <div className="w-3 h-3 rounded-full bg-primary"></div>
-              <div className="w-20 h-0.5 bg-primary"></div>
-              <div className="w-3 h-3 rounded-full bg-primary"></div>
-              <div className="w-20 h-0.5 bg-primary"></div>
-              <div className="w-3 h-3 rounded-full bg-primary"></div>
-              <div className="w-20 h-0.5 bg-primary"></div>
-              <div className="w-3 h-3 rounded-full bg-primary"></div>
+            {/* Steps Section */}
+            <div className="order-1 lg:order-2 space-y-6">
+              {steps.map((step, index) => (
+                <div key={index} className="flex gap-4">
+                  <div className={`flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg border-2 ${step.color}`}>
+                    {step.step}
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-2 text-foreground">{step.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{step.description}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

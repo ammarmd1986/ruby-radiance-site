@@ -1,12 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Quote } from "lucide-react";
-import ikramulImg from "@/assets/student-ikramul.jpg";
-import ahmedImg from "@/assets/student-ahmed.jpg";
+import ikramulImg from "@/assets/student-ikramul-new.jpg";
+import ahmedImg from "@/assets/student-ahmed-new.jpg";
 import tasninImg from "@/assets/student-tasnin.jpg";
-import jahidImg from "@/assets/student-jahid.jpg";
-import saifuddinImg from "@/assets/student-saifuddin.jpg";
-import alamgirImg from "@/assets/student-alamgir.jpg";
+import jahidImg from "@/assets/student-jahid-new.jpg";
+import saifuddinImg from "@/assets/student-saifuddin-new.jpg";
+import alamgirImg from "@/assets/student-alamgir-new.jpg";
 import raniImg from "@/assets/student-rani.jpg";
 
 const achievers = [

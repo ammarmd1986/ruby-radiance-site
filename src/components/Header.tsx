@@ -22,7 +22,9 @@ const Header = () => {
             <a href="#home" className="text-foreground hover:text-primary transition-colors">Home</a>
             <a href="#approach" className="text-foreground hover:text-primary transition-colors">Our Approach</a>
             <a href="#why-join" className="text-foreground hover:text-primary transition-colors">Why Join Us</a>
+            <a href="#courses" className="text-foreground hover:text-primary transition-colors">Courses</a>
             <a href="#achievers" className="text-foreground hover:text-primary transition-colors">Achievers</a>
+            <a href="#ielts-tips" className="text-foreground hover:text-primary transition-colors">IELTS Tips</a>
             <a href="#faq" className="text-foreground hover:text-primary transition-colors">FAQ</a>
           </nav>
 
