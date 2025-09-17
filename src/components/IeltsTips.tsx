@@ -134,7 +134,7 @@ const IeltsTips = () => {
 
         {/* Call to Action */}
         <div className="max-w-4xl mx-auto text-center">
-          <Card className="bg-gradient-to-r from-primary to-secondary p-8 text-white">
+          <Card className="bg-red-600 p-8 text-white">
             <CardContent className="p-0">
               <p className="text-lg leading-relaxed">
                 It is therefore very important to seek proper guidance and feedback on how you attempt each test module and also how you develop your English skills. What are you waiting for? Join EnglishXpress to unlock new doors of opportunities
