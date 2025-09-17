@@ -156,5 +156,7 @@ All colors MUST be HSL.
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-bottom: 4px;
+    line-height: 1.2;
   }
 }
