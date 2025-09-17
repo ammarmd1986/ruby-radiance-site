@@ -29,7 +29,15 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center gap-3">
-            <Button variant="whiteOutline" size="sm" className="hidden md:flex">
+            <Button 
+              variant="whiteOutline" 
+              size="sm" 
+              className="hidden md:flex"
+              onClick={() => {
+                const element = document.querySelector('#faq .bg-accent');
+                element?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Contact Us
             </Button>
           </div>
