@@ -66,27 +66,23 @@ const WhyJoinUs = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <div className="bg-accent rounded-2xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4 text-foreground">Ready to Start Your Journey?</h3>
-            <p className="text-muted-foreground mb-6 text-lg">
+          <div className="gradient-bg rounded-2xl p-8 max-w-4xl mx-auto border border-primary/20 shadow-elegant">
+            <h3 className="text-2xl font-bold mb-4 text-white">Ready to Start Your Journey?</h3>
+            <p className="text-white/90 mb-6 text-lg">
               Join thousands of successful students who achieved their IELTS goals with us
             </p>
             <div className="flex items-center justify-center gap-4">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center shadow-lg">
+              <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
               </div>
-              <div className="relative bg-white border-4 border-blue-600 rounded-xl p-6 shadow-lg">
-                <div className="absolute -top-2 -left-2 w-8 h-8 bg-blue-600 rounded-full"></div>
-                <div className="absolute -top-2 -right-2 w-8 h-8 bg-blue-600 rounded-full"></div>
-                <div className="absolute -bottom-2 -left-2 w-8 h-8 bg-blue-600 rounded-full"></div>
-                <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-blue-600 rounded-full"></div>
-                <h4 className="text-2xl font-bold text-blue-600 text-center leading-tight">
+              <div className="relative bg-white rounded-xl p-6 shadow-lg border-2 border-white/30">
+                <h4 className="text-2xl font-bold text-primary text-center leading-tight">
                   Join EnglishXpress and open new doors of opportunity globally!
                 </h4>
               </div>
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center shadow-lg">
+              <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
