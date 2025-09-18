@@ -18,14 +18,14 @@ const Header = () => {
             </div>
           </div>
           
-          <nav className="hidden lg:flex items-center gap-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors">Home</a>
-            <a href="#approach" className="text-foreground hover:text-primary transition-colors">Our Approach</a>
-            <a href="#why-join" className="text-foreground hover:text-primary transition-colors">Why Join Us</a>
-            <a href="#courses" className="text-foreground hover:text-primary transition-colors">Courses</a>
-            <a href="#achievers" className="text-foreground hover:text-primary transition-colors">Achievers</a>
-            <a href="#ielts-tips" className="text-foreground hover:text-primary transition-colors">IELTS Tips</a>
-            <a href="#faq" className="text-foreground hover:text-primary transition-colors">FAQ</a>
+          <nav className="hidden lg:flex items-center gap-3">
+            <a href="#home" className="px-4 py-2 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors">Home</a>
+            <a href="#approach" className="px-4 py-2 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors">Our Approach</a>
+            <a href="#why-join" className="px-4 py-2 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors">Why Join Us</a>
+            <a href="#courses" className="px-4 py-2 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors">Courses</a>
+            <a href="#achievers" className="px-4 py-2 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors">Achievers</a>
+            <a href="#ielts-tips" className="px-4 py-2 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors">IELTS Tips</a>
+            <a href="#faq" className="px-4 py-2 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors">FAQ</a>
           </nav>
 
           <div className="flex items-center gap-3">
