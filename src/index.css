@@ -43,6 +43,12 @@ All colors MUST be HSL.
     --success-green: 120 60% 50%;
     --text-dark: 0 0% 15%;
     --text-light: 0 0% 35%;
+    
+    /* Accent Colors */
+    --subtle-yellow: 45 100% 95%;
+    --yellow-text: 45 100% 25%;
+    --light-purple: 270 50% 95%;
+    --purple-text: 270 80% 30%;
 
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(var(--hero-red)), hsl(var(--hero-red-dark)));
