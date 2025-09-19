@@ -132,7 +132,7 @@ const Achievers = () => {
               <div className="text-muted-foreground text-lg">Success Rate</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-primary mb-2">7.5</div>
+              <div className="text-4xl font-bold text-primary mb-2">6.0 - 8.5</div>
               <div className="text-muted-foreground text-lg">Average Band</div>
             </div>
             <div>
