@@ -67,15 +67,15 @@ const WhyJoinUs = () => {
         {/* Call to Action */}
         <div className="text-center mt-20">
           <div className="rounded-3xl p-12 max-w-5xl mx-auto shadow-xl border border-purple-text/20" style={{backgroundColor: 'hsl(var(--light-purple))'}}>
-            <h3 className="text-4xl md:text-5xl font-black mb-6 uppercase tracking-wide" style={{color: 'hsl(var(--purple-text))'}}>
+            <h3 className="text-5xl md:text-6xl font-black mb-6 uppercase tracking-wide" style={{color: 'hsl(var(--purple-text))'}}>
               READY TO START YOUR JOURNEY?
             </h3>
-            <p className="mb-8 text-xl font-medium leading-relaxed max-w-3xl mx-auto" style={{color: 'hsl(var(--purple-text) / 0.8)'}}>
+            <p className="mb-8 text-2xl font-medium leading-relaxed max-w-3xl mx-auto" style={{color: 'hsl(var(--purple-text) / 0.8)'}}>
               Join thousands of successful students who achieved their IELTS goals with us
             </p>
             
             <div className="bg-white rounded-2xl p-8 shadow-2xl border-2 max-w-3xl mx-auto" style={{borderColor: 'hsl(var(--purple-text) / 0.3)'}}>
-              <h4 className="text-3xl md:text-4xl font-bold text-center leading-tight mb-4" style={{color: 'hsl(var(--purple-text))'}}>
+              <h4 className="text-4xl md:text-5xl font-bold text-center leading-tight mb-4" style={{color: 'hsl(var(--purple-text))'}}>
                 Join EnglishXpress and open new doors of opportunity globally!
               </h4>
               <div className="w-20 h-1 mx-auto rounded-full" style={{backgroundColor: 'hsl(var(--purple-text))'}}></div>
