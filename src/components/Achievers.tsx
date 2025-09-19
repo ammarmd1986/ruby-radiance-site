@@ -75,7 +75,7 @@ const Achievers = () => {
     <section id="achievers" className="py-20 bg-gradient-to-b from-accent to-background">
       <div className="container mx-auto px-4">
         <h2 className="section-heading text-gradient">Our Achievers</h2>
-        <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto text-lg">
+        <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto text-xl">
           Celebrating the success stories of our dedicated students
         </p>
 
@@ -102,16 +102,16 @@ const Achievers = () => {
                       </div>
                     </div>
                     
-                    <h3 className="text-lg font-bold mb-2 text-foreground">{achiever.name}</h3>
+                    <h3 className="text-xl font-bold mb-2 text-foreground">{achiever.name}</h3>
                     
-                    <div className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-bold mb-4 ${getBandColor(achiever.band)}`}>
+                    <div className={`inline-flex items-center px-4 py-2 rounded-full text-base font-bold mb-4 ${getBandColor(achiever.band)}`}>
                       IELTS Band: {achiever.band}
                     </div>
                     
                     {/* Testimonial */}
                     <div className="relative">
                       <Quote className="w-6 h-6 text-primary/30 absolute -top-2 -left-1" />
-                      <p className="text-sm text-muted-foreground italic leading-relaxed pl-4">
+                      <p className="text-base text-muted-foreground italic leading-relaxed pl-4">
                         "{achiever.testimonial}"
                       </p>
                     </div>
@@ -128,20 +128,20 @@ const Achievers = () => {
         <div className="mt-16 bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-primary mb-2">85%</div>
-              <div className="text-muted-foreground">Success Rate</div>
+              <div className="text-4xl font-bold text-primary mb-2">85%</div>
+              <div className="text-muted-foreground text-lg">Success Rate</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary mb-2">7.5</div>
-              <div className="text-muted-foreground">Average Band</div>
+              <div className="text-4xl font-bold text-primary mb-2">7.5</div>
+              <div className="text-muted-foreground text-lg">Average Band</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary mb-2">500+</div>
-              <div className="text-muted-foreground">Students Trained</div>
+              <div className="text-4xl font-bold text-primary mb-2">500+</div>
+              <div className="text-muted-foreground text-lg">Students Trained</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary mb-2">98%</div>
-              <div className="text-muted-foreground">Satisfaction</div>
+              <div className="text-4xl font-bold text-primary mb-2">98%</div>
+              <div className="text-muted-foreground text-lg">Satisfaction</div>
             </div>
           </div>
         </div>

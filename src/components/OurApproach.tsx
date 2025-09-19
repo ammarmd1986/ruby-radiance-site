@@ -32,7 +32,7 @@ const OurApproach = () => {
     <section id="approach" className="py-20 bg-gradient-to-b from-background to-accent">
       <div className="container mx-auto px-4">
         <h2 className="section-heading text-gradient text-center mb-4">Our Approach</h2>
-        <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto text-lg">
+        <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto text-xl">
           A systematic, step-by-step methodology that has helped thousands of students achieve their IELTS goals efficiently and effectively.
         </p>
 
@@ -58,8 +58,8 @@ const OurApproach = () => {
                     {step.step}
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-2 text-foreground">{step.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{step.description}</p>
+                    <h3 className="text-2xl font-bold mb-2 text-foreground">{step.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed text-lg">{step.description}</p>
                   </div>
                 </div>
               ))}

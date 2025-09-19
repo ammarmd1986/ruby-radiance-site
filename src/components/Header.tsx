@@ -13,8 +13,8 @@ const Header = () => {
               className="h-12 w-auto"
             />
             <div className="hidden md:block">
-              <h1 className="text-xl font-bold text-foreground">EnglishXpress</h1>
-              <p className="text-sm text-muted-foreground">Learn Better. Go Further!</p>
+              <h1 className="text-2xl font-bold text-foreground">EnglishXpress</h1>
+              <p className="text-base text-muted-foreground">Learn Better. Go Further!</p>
             </div>
           </div>
           

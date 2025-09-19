@@ -41,7 +41,7 @@ const FAQ = () => {
     <section id="faq" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="section-heading text-gradient">Frequently Asked Questions</h2>
-        <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto text-lg">
+        <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto text-xl">
           Get answers to the most common questions about our programs
         </p>
 
@@ -53,10 +53,10 @@ const FAQ = () => {
                 value={`item-${index}`} 
                 className="border border-border rounded-lg px-6 shadow-sm"
               >
-                <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary">
+                <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary text-lg">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground leading-relaxed pt-2">
+                <AccordionContent className="text-muted-foreground leading-relaxed pt-2 text-base">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -67,15 +67,15 @@ const FAQ = () => {
         {/* Contact CTA */}
         <div className="text-center mt-16">
           <div className="bg-accent rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-xl font-bold mb-4 text-foreground">Still have questions?</h3>
-            <p className="text-muted-foreground mb-6">
+            <h3 className="text-2xl font-bold mb-4 text-foreground">Still have questions?</h3>
+            <p className="text-muted-foreground mb-6 text-lg">
               Our team is here to help you with any additional questions you may have
             </p>
             <div className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-all duration-300 animate-pulse">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              <span className="text-lg font-bold">Call - 01782521290</span>
+              <span className="text-xl font-bold">Call - 01782521290</span>
             </div>
             
           </div>

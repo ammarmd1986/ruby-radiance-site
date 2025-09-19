@@ -42,7 +42,7 @@ const IeltsTips = () => {
     <section id="ielts-tips" className="py-20 bg-gradient-to-b from-background to-accent">
       <div className="container mx-auto px-4">
         <h2 className="section-heading text-gradient">IELTS Tips</h2>
-        <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto text-lg">
+        <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto text-xl">
           Master IELTS with our comprehensive preparation checklist, vocabulary strategies, and expert reading tips.
         </p>
 
@@ -65,8 +65,8 @@ const IeltsTips = () => {
               <TableBody>
                 {preparationChecklist.map((item, index) => (
                   <TableRow key={index} className={index % 2 === 0 ? "bg-accent/30" : "bg-background"}>
-                    <TableCell className="font-bold text-primary text-center text-lg">{item.step}</TableCell>
-                    <TableCell className="text-foreground leading-relaxed py-4">{item.task}</TableCell>
+                    <TableCell className="font-bold text-primary text-center text-xl">{item.step}</TableCell>
+                    <TableCell className="text-foreground leading-relaxed py-4 text-lg">{item.task}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -94,9 +94,9 @@ const IeltsTips = () => {
               <TableBody>
                 {vocabularySteps.map((item, index) => (
                   <TableRow key={index} className={index % 2 === 0 ? "bg-accent/30" : "bg-background"}>
-                    <TableCell className="font-bold text-secondary text-center text-lg">{item.step}</TableCell>
-                    <TableCell className="font-semibold text-foreground">{item.task}</TableCell>
-                    <TableCell className="text-foreground leading-relaxed py-4">{item.description}</TableCell>
+                    <TableCell className="font-bold text-secondary text-center text-xl">{item.step}</TableCell>
+                    <TableCell className="font-semibold text-foreground text-lg">{item.task}</TableCell>
+                    <TableCell className="text-foreground leading-relaxed py-4 text-lg">{item.description}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -123,8 +123,8 @@ const IeltsTips = () => {
               <TableBody>
                 {readingTips.map((item, index) => (
                   <TableRow key={index} className={index % 2 === 0 ? "bg-accent/30" : "bg-background"}>
-                    <TableCell className="font-semibold text-foreground leading-relaxed py-4">{item.tip}</TableCell>
-                    <TableCell className="text-foreground leading-relaxed py-4">{item.description}</TableCell>
+                    <TableCell className="font-semibold text-foreground leading-relaxed py-4 text-lg">{item.tip}</TableCell>
+                    <TableCell className="text-foreground leading-relaxed py-4 text-lg">{item.description}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
@@ -136,7 +136,7 @@ const IeltsTips = () => {
         <div className="max-w-4xl mx-auto text-center">
           <Card className="bg-red-600 p-8 text-white">
             <CardContent className="p-0">
-              <p className="text-lg leading-relaxed">
+              <p className="text-xl leading-relaxed">
                 It is therefore very important to seek proper guidance and feedback on how you attempt each test module and also how you develop your English skills. What are you waiting for? Join EnglishXpress to unlock new doors of opportunities
               </p>
             </CardContent>

@@ -82,7 +82,7 @@ const Courses = () => {
     <section id="courses" className="py-20 bg-gradient-to-b from-accent to-background">
       <div className="container mx-auto px-4">
         <h2 className="section-heading text-gradient">Our Courses</h2>
-        <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto text-lg">
+        <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto text-xl">
           EnglishXpress is ready to offer the following courses. Join us to unlock new doors of opportunities locally and globally and let not English be the barrier to stop you from achieving your dreams.
         </p>
 
@@ -95,39 +95,39 @@ const Courses = () => {
                 </Badge>
               )}
               <CardHeader>
-                <CardTitle className="text-2xl font-bold text-foreground mb-4">
+                <CardTitle className="text-3xl font-bold text-foreground mb-4">
                   {course.title}
                 </CardTitle>
                 <div className="space-y-3">
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <Clock className="w-4 h-4" />
-                    <span className="text-sm">{course.duration}</span>
+                    <span className="text-base">{course.duration}</span>
                   </div>
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <Calendar className="w-4 h-4" />
-                    <span className="text-sm">{course.timing} | {course.days}</span>
+                    <span className="text-base">{course.timing} | {course.days}</span>
                   </div>
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <BookOpen className="w-4 h-4" />
-                    <span className="text-sm">{course.classes}</span>
+                    <span className="text-base">{course.classes}</span>
                   </div>
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <Users className="w-4 h-4" />
-                    <span className="text-sm">Mock Tests: {course.mockTests}</span>
+                    <span className="text-base">Mock Tests: {course.mockTests}</span>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <div className="mb-4">
-                  <div className="text-3xl font-bold text-primary mb-2">{course.fee}</div>
-                  <p className="text-sm text-muted-foreground">{course.suitable}</p>
+                  <div className="text-4xl font-bold text-primary mb-2">{course.fee}</div>
+                  <p className="text-base text-muted-foreground">{course.suitable}</p>
                 </div>
                 
                 <div className="space-y-2">
-                  <h4 className="font-semibold text-foreground">Features:</h4>
+                  <h4 className="font-semibold text-foreground text-lg">Features:</h4>
                   <ul className="space-y-1">
                     {course.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
+                      <li key={featureIndex} className="flex items-start gap-2 text-base text-muted-foreground">
                         <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 flex-shrink-0" />
                         <span>{feature}</span>
                       </li>

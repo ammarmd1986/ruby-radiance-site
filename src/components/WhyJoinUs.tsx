@@ -39,7 +39,7 @@ const WhyJoinUs = () => {
     <section id="why-join" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="section-heading text-gradient">Why Join Us?</h2>
-        <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto text-lg">
+        <p className="text-center text-muted-foreground mb-16 max-w-3xl mx-auto text-xl">
           Discover what makes EnglishXpress the preferred choice for serious IELTS candidates
         </p>
 
@@ -54,8 +54,8 @@ const WhyJoinUs = () => {
                       <IconComponent className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold mb-3 text-foreground">{benefit.title}</h3>
-                      <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
+                      <h3 className="text-xl font-bold mb-3 text-foreground">{benefit.title}</h3>
+                      <p className="text-muted-foreground leading-relaxed text-base">{benefit.description}</p>
                     </div>
                   </div>
                 </CardContent>
