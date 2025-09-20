@@ -69,16 +69,16 @@ const Header = () => {
                   <Menu className="h-4 w-4" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[50vw] max-w-sm">
-                <div className="flex flex-col gap-3 mt-6">
-                  <div className="flex items-center gap-2 mb-4">
+              <SheetContent side="right" className="w-[50vw] max-w-sm h-[50vh] max-h-96">
+                <div className="flex flex-col gap-1.5 mt-3">
+                  <div className="flex items-center gap-1.5 mb-2">
                     <img 
                       src={englishXpressLogo} 
                       alt="EnglishXpress Logo" 
-                      className="h-6 w-auto"
+                      className="h-5 w-auto"
                     />
                     <div>
-                      <h3 className="text-responsive-base font-bold text-foreground">EnglishXpress</h3>
+                      <h3 className="text-responsive-sm font-bold text-foreground">EnglishXpress</h3>
                       <p className="text-responsive-xs text-muted-foreground">Learn Better. Go Further!</p>
                     </div>
                   </div>
@@ -87,7 +87,7 @@ const Header = () => {
                     <button
                       key={item.href}
                       onClick={() => scrollToSection(item.href)}
-                      className="w-full text-left px-3 py-2.5 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors text-responsive-sm"
+                      className="w-full text-left px-2.5 py-1.5 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors text-responsive-xs"
                     >
                       {item.label}
                     </button>
@@ -95,7 +95,7 @@ const Header = () => {
                   
                   <Button 
                     variant="outline" 
-                    className="mt-3 text-responsive-sm py-2"
+                    className="mt-1.5 text-responsive-xs py-1.5 h-auto"
                     onClick={() => scrollToSection('#faq')}
                   >
                     Contact Us
