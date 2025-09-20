@@ -76,7 +76,7 @@ const IeltsTips = () => {
 
         {/* Learn IELTS Vocabulary in 6 Steps */}
         <div className="max-w-6xl mx-auto mb-16">
-          <Card className="bg-gradient-to-r from-secondary to-secondary/80 text-white mb-8">
+          <Card className="bg-gradient-to-r from-primary to-primary/80 text-white mb-8">
             <CardHeader>
               <CardTitle className="text-3xl text-center">Learn IELTS Vocabulary in 6 Steps</CardTitle>
             </CardHeader>
@@ -85,16 +85,16 @@ const IeltsTips = () => {
           <Card>
             <Table>
               <TableHeader>
-                <TableRow className="bg-secondary/5">
-                  <TableHead className="w-16 font-bold text-secondary">Step</TableHead>
-                  <TableHead className="w-48 font-bold text-secondary">Task</TableHead>
-                  <TableHead className="font-bold text-secondary">Description</TableHead>
+                <TableRow className="bg-primary/5">
+                  <TableHead className="w-16 font-bold text-primary">Step</TableHead>
+                  <TableHead className="w-48 font-bold text-primary">Task</TableHead>
+                  <TableHead className="font-bold text-primary">Description</TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
                 {vocabularySteps.map((item, index) => (
                   <TableRow key={index} className={index % 2 === 0 ? "bg-accent/30" : "bg-background"}>
-                    <TableCell className="font-bold text-secondary text-center text-xl">{item.step}</TableCell>
+                    <TableCell className="font-bold text-primary text-center text-xl">{item.step}</TableCell>
                     <TableCell className="font-semibold text-foreground text-lg">{item.task}</TableCell>
                     <TableCell className="text-foreground leading-relaxed py-4 text-lg">{item.description}</TableCell>
                   </TableRow>
