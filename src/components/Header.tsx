@@ -69,7 +69,7 @@ const Header = () => {
                   <Menu className="h-4 w-4" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[50vw] max-w-sm h-[50vh] max-h-96">
+              <SheetContent side="right" className="w-[50vw] max-w-sm h-auto max-h-[60vh] overflow-y-auto">
                 <div className="flex flex-col gap-1.5 mt-3">
                   <div className="flex items-center gap-1.5 mb-2">
                     <img 
