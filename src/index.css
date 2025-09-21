@@ -237,5 +237,6 @@ All colors MUST be HSL.
     -webkit-text-fill-color: transparent;
     padding-bottom: 4px;
     line-height: 1.2;
+    font-size: inherit;
   }
 }
